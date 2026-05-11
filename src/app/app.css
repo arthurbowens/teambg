@@ -79,9 +79,9 @@
 
 .btn-whats {
   background: linear-gradient(90deg, #16ef9f, #45ffc9);
-  box-shadow: 0 8px 24px #1dffb35c;
   color: #03231a;
-  font-weight: 800;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .hero {
@@ -272,6 +272,14 @@ h1 {
   padding: 0.9rem 1.3rem;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn.btn-whats {
+  border-radius: 0.55rem;
+  box-shadow: 0 4px 14px #1dffb33d;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.45rem 0.75rem;
 }
 
 .btn:hover {
@@ -742,8 +750,13 @@ h3 {
     padding: 0 1rem;
   }
 
-  .btn {
+  .hero-actions .btn {
     width: 100%;
+  }
+
+  .btn.btn-whats {
+    font-size: 0.72rem;
+    padding: 0.4rem 0.65rem;
   }
 
   .brand {
